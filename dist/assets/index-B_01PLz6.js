@@ -473,6 +473,7 @@ ul {
   background-color: rgba(255, 255, 255, 0.05); /* 👈 adiciona base neutra */
   @media (max-width: 900px) {
     margin: 0 auto 1.5rem;
+    max-width: 280px;
   }
 `,Gu=se.h2`
   font-size: clamp(1.8rem, 3vw, 2.4rem);
