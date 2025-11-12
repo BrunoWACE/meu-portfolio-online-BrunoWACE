@@ -497,6 +497,7 @@ ul {
   @media (max-width: 900px) {
     grid-template-columns: repeat(2, 1fr); /* 2 colunas no tablet/mobile */
     gap: 1.5rem; /* espaçamento mais justo */
+    
   }
 
   @media (max-width: 480px) {
@@ -520,8 +521,8 @@ ul {
   transition: all 0.3s ease;
 
     @media (max-width: 900px) {
-     width: 160px;
-     height: 160px;
+     width: 140px;
+     height: 140px;
   }
 
   .icon {
