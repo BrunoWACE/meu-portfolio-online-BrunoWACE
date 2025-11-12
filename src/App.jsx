@@ -214,7 +214,7 @@ function App() {
           </div>
 
           {/* Label de idioma + ícone */}
-          
+
         </div>
 
         {/* Menu de links */}
@@ -244,14 +244,14 @@ function App() {
         </ul>
 
         <div className="lang-wrap">
-            <p className="lang-label">{isEnglish ? "EN" : "BR"}</p>
-            <IoLanguage
-              className="lang-icon"
-              onClick={toggleLanguage}
-              title={isEnglish ? "Change Language" : "Mudar idioma"}
-              aria-label={isEnglish ? "Change Language" : "Mudar idioma"}
-            />
-          </div>
+          <p className="lang-label">{isEnglish ? "EN" : "BR"}</p>
+          <IoLanguage
+            className="lang-icon"
+            onClick={toggleLanguage}
+            title={isEnglish ? "Change Language" : "Mudar idioma"}
+            aria-label={isEnglish ? "Change Language" : "Mudar idioma"}
+          />
+        </div>
       </Nav>
 
       {/* Início */}
@@ -283,7 +283,14 @@ function App() {
       {/* Sobre */}
       <AboutSection id="Sobre" ref={aboutRef} className={isVisible ? "visible" : ""}>
         <AboutInner>
-          <AboutPhoto loading='lazy' src="/BrunoLinkedin.png" alt="Foto de Bruno Alves Ferreira" width={360} height={360} />
+          <AboutPhoto
+            loading="lazy"
+            src={`${import.meta.env.BASE_URL}BrunoLinkedin.png`}
+            alt="Foto de Bruno Alves Ferreira"
+            width={360}
+            height={360}
+          />
+
           <div>
             <AboutTitle>{isEnglish ? "About Me" : "Sobre Mim"}</AboutTitle>
             <AboutText>
@@ -329,8 +336,9 @@ function App() {
             <ProjectButtons style={{ marginTop: '1.5rem' }}>
               <ProjectButton
                 as="a"
-                href="/Bruno Alves Ferreira_Desenvolvedor Web.pdf"
-                download
+                href={`${import.meta.env.BASE_URL}Bruno-Alves-Ferreira_Desenvolvedor-Web.pdf`}
+                download="Bruno-Alves-Ferreira_CV.pdf"
+                type="application/pdf"
                 style={{ fontSize: '1rem', minWidth: '190px' }}
               >
                 <FaDownload /> {isEnglish ? 'Download Resume' : 'Baixar Currículo'}
@@ -400,7 +408,12 @@ function App() {
         <ProjectGrid>
           {/* Card 1 */}
           <ProjectCard>
-            <ProjectThumb loading='lazy' src="/ImgSorteadorOnline.png" alt="Meu Sorteador Online" />
+            <ProjectThumb
+              loading="lazy"
+              src={`${import.meta.env.BASE_URL}ImgSorteadorOnline.png`}
+              alt="Meu Sorteador Online"
+            />
+
             <ProjectContent>
               <h3>{isEnglish ? 'My Online Number Picker' : 'Meu Sorteador Online'}</h3>
               <p>
@@ -441,7 +454,12 @@ function App() {
 
           {/* Card 2 */}
           <ProjectCard>
-            <ProjectThumb loading='lazy' src="/ImgJokenPO.png" alt="Game JokenPÔ" />
+            <ProjectThumb
+              loading="lazy"
+              src={`${import.meta.env.BASE_URL}ImgJokenPO.png`}
+              alt="Game JokenPÔ"
+            />
+
             <ProjectContent>
               <h3>Game - JokenPÔ</h3>
               <p>
@@ -479,7 +497,12 @@ function App() {
 
           {/* Card 3 */}
           <ProjectCard>
-            <ProjectThumb loading='lazy' src="/ImgConversorOnline.png" alt="Conversor de Moedas Online" />
+            <ProjectThumb
+              loading="lazy"
+              src={`${import.meta.env.BASE_URL}ImgConversorOnline.png`}
+              alt="Conversor de Moedas Online"
+            />
+
             <ProjectContent>
               <h3>{isEnglish ? 'Online Currency Converter' : 'Conversor de Moedas Online'}</h3>
               <p>
@@ -520,7 +543,12 @@ function App() {
 
           {/* Card 4 */}
           <ProjectCard>
-            <ProjectThumb loading='lazy' src="/ImgSiteDeJP.png" alt="Site - Benkyou Now Online" />
+            <ProjectThumb
+              loading="lazy"
+              src={`${import.meta.env.BASE_URL}ImgSiteDeJP.png`}
+              alt="Site - Benkyou Now Online"
+            />
+
             <ProjectContent>
               <h3>Website - Benkyou Now Online</h3>
               <p>
@@ -577,9 +605,10 @@ function App() {
           <CertificateCard>
             <CertificateThumb
               loading="lazy"
-              src="/01Certificado.png"
+              src={`${import.meta.env.BASE_URL}01Certificado.png`}
               alt={isEnglish ? "Certificate - HTML5" : "Certificado - HTML5"}
             />
+
             <ProjectContent>
               <h3>{isEnglish ? 'Certificate - HTML5' : 'Certificado - HTML5'}</h3>
               <br />
@@ -609,9 +638,10 @@ function App() {
           <CertificateCard>
             <CertificateThumb
               loading="lazy"
-              src="/02Certificado.png"
-              alt={isEnglish ? 'Certificate - CSS3' : 'Certificado - CSS3'}
+              src={`${import.meta.env.BASE_URL}02Certificado.png`}
+              alt={isEnglish ? "Certificate - CSS3" : "Certificado - CSS3"}
             />
+
             <ProjectContent>
               <h3>{isEnglish ? 'Certificate - CSS3' : 'Certificado - CSS3'}</h3>
               <br />
@@ -641,9 +671,10 @@ function App() {
           <CertificateCard>
             <CertificateThumb
               loading="lazy"
-              src="/03Certificado.png"
-              alt={isEnglish ? 'Certificate - git & GitHub' : 'Certificado - git & GitHub'}
+              src={`${import.meta.env.BASE_URL}03Certificado.png`}
+              alt={isEnglish ? "Certificate - git & GitHub" : "Certificado - git & GitHub"}
             />
+
             <ProjectContent>
               <h3>{isEnglish ? 'Certificate - git & GitHub' : 'Certificado - git & GitHub'}</h3>
               <br />
@@ -673,9 +704,10 @@ function App() {
           <CertificateCard>
             <CertificateThumb
               loading="lazy"
-              src="/04Certificado.png"
-              alt={isEnglish ? 'Certificate - JavaScript' : 'Certificado - Javascript'}
+              src={`${import.meta.env.BASE_URL}04Certificado.png`}
+              alt={isEnglish ? "Certificate - JavaScript" : "Certificado - JavaScript"}
             />
+
             <ProjectContent>
               <h3>{isEnglish ? 'Certificate - JavaScript' : 'Certificado - Javascript'}</h3>
               <br />
@@ -705,9 +737,10 @@ function App() {
           <CertificateCard>
             <CertificateThumb
               loading="lazy"
-              src="/05Certificado.png"
-              alt={isEnglish ? 'Certificate - Node' : 'Certificado - Node'}
+              src={`${import.meta.env.BASE_URL}05Certificado.png`}
+              alt={isEnglish ? "Certificate - Node" : "Certificado - Node"}
             />
+
             <ProjectContent>
               <h3>{isEnglish ? 'Certificate - Node' : 'Certificado - Node'}</h3>
               <br />
@@ -737,9 +770,10 @@ function App() {
           <CertificateCard>
             <CertificateThumb
               loading="lazy"
-              src="/06Certificado.png"
-              alt={isEnglish ? 'Certificate - JavaScript Advanced' : 'Certificado - JavaScript Avançado'}
+              src={`${import.meta.env.BASE_URL}06Certificado.png`}
+              alt={isEnglish ? "Certificate - JavaScript Advanced" : "Certificado - JavaScript Avançado"}
             />
+
             <ProjectContent>
               <h3>{isEnglish ? 'Certificate - JavaScript Advanced' : 'Certificado - JavaScript Avançado'}</h3>
               <p>
@@ -769,9 +803,10 @@ function App() {
           <CertificateCard>
             <CertificateThumb
               loading="lazy"
-              src="/07Certificado.png"
-              alt={isEnglish ? 'Certificate - Project Nike Air' : 'Certificado - Projeto Nike Air'}
+              src={`${import.meta.env.BASE_URL}07Certificado.png`}
+              alt={isEnglish ? "Certificate - Project Nike Air" : "Certificado - Projeto Nike Air"}
             />
+
             <ProjectContent>
               <h3>{isEnglish ? 'Certificate - Project Nike Air' : 'Certificado - Projeto Nike Air'}</h3>
               <br />

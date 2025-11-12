@@ -450,11 +450,13 @@ export const AboutPhoto = styled.img`
   box-shadow: 0 10px 40px rgba(0, 0, 0, .35);
   justify-self: center;
   background-color: rgba(255, 255, 255, 0.05); /* 👈 adiciona base neutra */
+
   @media (max-width: 900px) {
     margin: 0 auto 1.5rem;
+    width: 250px;
+    height:250px;
   }
 `;
-
 
 
 /* TECNOLOGIAS */
@@ -485,6 +487,7 @@ export const TechGrid = styled.div`
   @media (max-width: 900px) {
     grid-template-columns: repeat(2, 1fr); /* 2 colunas no tablet/mobile */
     gap: 1.5rem; /* espaçamento mais justo */
+    
   }
 
   @media (max-width: 480px) {
@@ -511,8 +514,8 @@ export const TechCard = styled.div`
   transition: all 0.3s ease;
 
     @media (max-width: 900px) {
-     width: 160px;
-     height: 160px;
+     width: 140px;
+     height: 140px;
   }
 
   .icon {

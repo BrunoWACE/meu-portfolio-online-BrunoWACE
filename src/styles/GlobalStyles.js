@@ -12,6 +12,13 @@ export const GlobalStyle = createGlobalStyle`
  }
 `
 
+/*
+yarn build
+git add -f dist
+git commit -m ""
+git subtree push --prefix dist origin gh-pages
+*/
+
 
 
  
