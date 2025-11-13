@@ -289,12 +289,12 @@ export const SubTitle = styled.h3`
   }
 
   @media (max-width: 600px) {
-    font-size: 20px;
+    font-size: 16px;
     min-height: 1.4em; /* ligeiramente maior pra caber bem */
   }
 
   @media (max-width: 400px) {
-    font-size: 16px;
+    font-size: 15px;
     min-height: 1.5em;
   }
 `;
@@ -486,7 +486,7 @@ export const TechGrid = styled.div`
 
   @media (max-width: 900px) {
     grid-template-columns: repeat(2, 1fr); /* 2 colunas no tablet/mobile */
-    gap: 1.5rem; /* espaçamento mais justo */
+    gap: 1rem; /* espaçamento mais justo */
     
   }
 
@@ -516,6 +516,7 @@ export const TechCard = styled.div`
     @media (max-width: 900px) {
      width: 140px;
      height: 140px;
+     padding: 1rem;
   }
 
   .icon {
@@ -571,6 +572,14 @@ export const TechSection = styled.section`
     linear-gradient(150deg, #151a33 60%);
   color: #fff;
   text-align: center;
+
+      @media (max-width: 900px) {
+        background:
+          radial-gradient(400px 300px at 10% 40%, rgba(168, 85, 247, 0.25), transparent 55%),
+          linear-gradient(150deg, #151a33 60%);
+  }
+
+
 
   /* 🔹 Estado base: tudo invisível */
   ${TechTitle}, ${TechIntro}, ${TechCard}, ${OtherTechs} {
@@ -686,13 +695,12 @@ export const CertificateGrid = styled(ProjectGrid)`
 export const CertificateCard = styled(ProjectCard)`
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 0 0 20px 20px;
+  border-radius: 20px;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   transition: transform .28s ease, box-shadow .28s ease, background .28s ease, border-color .28s ease;
 
     @media (max-width: 900px) {
-    border-radius: 20px;
     h3 { font-size: 1.25rem; margin: .2rem }
     
   }
@@ -733,7 +741,7 @@ export const ProjectContent = styled.div`
   padding: 1.5rem;
   text-align: left;
 
-  h3 { font-size: 1.25rem; margin: .2rem }
+  h3 { font-size: 1.15rem; margin: .2rem }
   p  { color: #d7d9e0;
     font-size: .98rem;
     line-height: 1.5;
@@ -809,6 +817,14 @@ export const ProjectSection = styled.section`
     linear-gradient(150deg, #151a33 60%);
   color: #fff;
   text-align: center;
+
+     @media (max-width: 900px) {
+      background:
+        radial-gradient(750px 600px at 15% 30%, rgba(168, 85, 247, 0.18), transparent 55%),
+        radial-gradient(550px 420px at 85% 70%, rgba(71, 129, 255, 0.18), transparent 55%),
+        linear-gradient(150deg, #151a33 60%);
+  }
+
 
   /* base invisível p/ fade-in */
   ${ProjectTitle}, ${ProjectIntro}, ${ProjectCard} {

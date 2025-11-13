@@ -832,6 +832,39 @@ function App() {
             </ProjectContent>
           </CertificateCard>
 
+          {/* Certificado 8 */}
+          <CertificateCard>
+            <CertificateThumb
+              loading="lazy"
+              src={`${import.meta.env.BASE_URL}08Certificado.png`}
+              alt={isEnglish ? "Certificate - introduction to AI" : "Certificado - Introdução a IA"}
+            />
+
+            <ProjectContent>
+              <h3>{isEnglish ? 'Certificate - introduction to AI' : 'Certificado - Introdução a IA'}</h3>
+              <br />
+              <p>
+                {isEnglish
+                  ? <>Issued by <strong>DevClub</strong> • <strong>2025</strong></>
+                  : <>Emitido por <strong>DevClub</strong> • <strong>2025</strong></>}
+              </p>
+              <ProjectTags>{isEnglish ? '#AI' : '#IA'}</ProjectTags>
+
+              <ProjectButtons>
+                <ProjectButton
+                  as="a"
+                  href="https://aulas.devclub.com.br/verify/d5dbf353df8467cf5017931fcfaa0b658f8fc223"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title={isEnglish ? "View certificate" : "Ver certificado"}
+                  style={{ fontSize: '1rem', minWidth: '175px' }}
+                >
+                  <FiExternalLink /> {isEnglish ? 'View Credential' : 'Exibir Credencial'}
+                </ProjectButton>
+              </ProjectButtons>
+            </ProjectContent>
+          </CertificateCard>
+
 
         </CertificateGrid>
       </ProjectSection>
