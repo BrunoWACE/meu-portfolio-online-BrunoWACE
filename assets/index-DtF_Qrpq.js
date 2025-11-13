@@ -794,7 +794,6 @@ ul {
 
      @media (max-width: 900px) {
       background:
-        radial-gradient(750px 600px at 15% 30%, rgba(168, 85, 247, 0.18), transparent 55%),
         radial-gradient(550px 420px at 85% 70%, rgba(71, 129, 255, 0.18), transparent 55%),
         linear-gradient(150deg, #151a33 60%);
   }
