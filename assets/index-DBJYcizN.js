@@ -493,14 +493,14 @@ ul {
   justify-items: center;
   margin-bottom: 2rem;
   width: 100%;
-  max-width: 600px;
+  max-width: 650px;
   margin-left: auto;
   margin-right: auto;
 
   @media (max-width: 900px) {
     grid-template-columns: repeat(2, 1fr); /* 2 colunas no tablet/mobile */
     gap: 1rem; /* espaçamento mais justo */
-    
+    max-width: 300px;
   }
 
   @media (max-width: 480px) {
